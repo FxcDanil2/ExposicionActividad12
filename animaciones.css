@@ -1,0 +1,50 @@
+body { background: linear-gradient(120deg, #f5f8fa 60%, #ffe3e3 100%); }
+.container { max-width: 900px; margin: 0 auto; padding: 2em; }
+.teoria, .practica {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(198,40,40,0.10), 0 1.5px 4px rgba(0,0,0,0.04);
+    margin-bottom: 2em;
+    padding: 2.5em 2em 2em 2em;
+    border-left: 8px solid #c62828;
+}
+h1 {
+    color: #fff;
+    background: linear-gradient(90deg, #c62828 60%, #ad1457 100%);
+    border-radius: 12px;
+    padding: 0.7em 0;
+    text-align: center;
+    margin-bottom: 2em;
+    box-shadow: 0 2px 8px rgba(198,40,40,0.10);
+    letter-spacing: 2px;
+}
+h2 { color: #c62828; margin-top: 0; }
+h3 { color: #ad1457; }
+.animacion-ejemplo {
+    display: flex; gap: 2em; align-items: center; justify-content: center; margin: 2em 0;
+}
+.cuadro-animado {
+    width: 80px; height: 80px; background: #c62828; border-radius: 16px;
+    animation: mover 2s infinite alternate cubic-bezier(.68,-0.55,.27,1.55);
+    display: flex; align-items: center; justify-content: center; color: #fff; font-size: 2em;
+    box-shadow: 0 2px 8px rgba(198,40,40,0.15);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+@keyframes mover {
+    0% { transform: translateX(0) scale(1); background: #c62828; }
+    100% { transform: translateX(180px) scale(1.2); background: #ad1457; }
+}
+pre {
+    background: #f8f9fa;
+    border: 1.5px solid #ad1457;
+    border-radius: 8px;
+    padding: 1.2em;
+    overflow-x: auto;
+    font-size: 1.1em;
+    box-shadow: 0 1px 4px rgba(198,40,40,0.07);
+}
+code { color: #ad1457; font-family: 'Fira Mono', 'Consolas', monospace; }
+ul, p { font-size: 1.1em; }
+strong { color: #c62828; }

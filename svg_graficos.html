@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos Vectoriales SVG</title>
+    <link rel="stylesheet" href="svg_graficos.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div style="background:linear-gradient(90deg,#1565c0 60%,#42a5f5 100%);color:#fff;font-size:2.2em;font-weight:bold;text-align:center;padding:0.7em 0;border-radius:14px;box-shadow:0 2px 8px rgba(21,101,192,0.10);letter-spacing:2px;margin-bottom:2em;">Gráficos Vectoriales <span style="color:#e3f2fd;">SVG</span></div>
+        <div class="teoria">
+            <h2>¿Qué es SVG?</h2>
+            <p><strong>SVG</strong> (Scalable Vector Graphics) es un formato de imagen vectorial basado en XML que permite describir gráficos bidimensionales, como líneas, círculos, polígonos y texto, de forma escalable y sin pérdida de calidad. Es ampliamente usado en la web para iconos, logotipos, ilustraciones y gráficos interactivos.</p>
+            <ul>
+                <li>Permite manipulación y animación mediante CSS y JavaScript.</li>
+                <li>Escalable a cualquier tamaño sin pixelarse.</li>
+                <li>Se puede incrustar directamente en HTML.</li>
+                <li>Los archivos SVG son editables con cualquier editor de texto y también con programas de diseño vectorial.</li>
+                <li>SVG es accesible y permite agregar descripciones para lectores de pantalla.</li>
+                <li>Admite gradientes, filtros y efectos visuales avanzados.</li>
+            </ul>
+            <p>SVG es ideal para gráficos que deben verse nítidos en cualquier resolución, como logotipos, iconos, gráficos estadísticos y animaciones simples.</p>
+        </div>
+        <div class="practica">
+            <h2>Aplicación Práctica</h2>
+            <h3>Enunciado práctico</h3>
+            <p><strong>Caso:</strong> La empresa "BlueTech" necesita un logotipo escalable para su web, que combine un círculo azul, un cuadrado blanco y el texto "SVG" en el centro. El logo debe poder usarse en cualquier tamaño sin perder calidad.</p>
+            <h3>Solución</h3>
+            <p>Se utiliza SVG para crear el logotipo solicitado. El siguiente código muestra cómo hacerlo y el resultado visual:</p>
+            <div class="svg-ejemplo">
+                <svg width="120" height="120" viewBox="0 0 120 120">
+                    <circle cx="60" cy="60" r="50" fill="#42a5f5" stroke="#1565c0" stroke-width="6" />
+                    <rect x="35" y="35" width="50" height="50" fill="#fff" stroke="#1565c0" stroke-width="4" />
+                    <text x="60" y="70" font-size="28" text-anchor="middle" fill="#1565c0" font-family="Arial">SVG</text>
+                </svg>
+                <pre><code>&lt;svg width="120" height="120"&gt;
+  &lt;circle cx="60" cy="60" r="50" fill="#42a5f5" stroke="#1565c0" stroke-width="6" /&gt;
+  &lt;rect x="35" y="35" width="50" height="50" fill="#fff" stroke="#1565c0" stroke-width="4" /&gt;
+  &lt;text x="60" y="70" font-size="28" text-anchor="middle" fill="#1565c0"&gt;SVG&lt;/text&gt;
+&lt;/svg&gt;</code></pre>
+            </div>
+            <p><strong>Ventaja:</strong> El gráfico se puede escalar y modificar fácilmente, y es accesible para animaciones o interacción. Además, el código SVG puede ser reutilizado y personalizado para otros proyectos.</p>
+            <p>En la práctica profesional, SVG es ampliamente utilizado en dashboards, visualización de datos, iconografía adaptable y animaciones ligeras para mejorar la experiencia de usuario.</p>
+        </div>
+    </div>
+</body>
+</html>

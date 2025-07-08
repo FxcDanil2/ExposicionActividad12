@@ -1,0 +1,43 @@
+body { background: linear-gradient(120deg, #f5f8fa 60%, #e3f2fd 100%); }
+.container { max-width: 900px; margin: 0 auto; padding: 2em; }
+.teoria, .practica {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(21,101,192,0.10), 0 1.5px 4px rgba(0,0,0,0.04);
+    margin-bottom: 2em;
+    padding: 2.5em 2em 2em 2em;
+    border-left: 8px solid #1565c0;
+}
+h1 {
+    color: #fff;
+    background: linear-gradient(90deg, #1565c0 60%, #42a5f5 100%);
+    border-radius: 12px;
+    padding: 0.7em 0;
+    text-align: center;
+    margin-bottom: 2em;
+    box-shadow: 0 2px 8px rgba(21,101,192,0.10);
+    letter-spacing: 2px;
+}
+h2 { color: #1565c0; margin-top: 0; }
+h3 { color: #42a5f5; }
+.svg-ejemplo {
+    display: flex; gap: 2em; justify-content: center; align-items: center; margin: 2em 0;
+}
+.svg-ejemplo svg {
+    border: 2px solid #42a5f5;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(21,101,192,0.10);
+}
+pre {
+    background: #f8f9fa;
+    border: 1.5px solid #42a5f5;
+    border-radius: 8px;
+    padding: 1.2em;
+    overflow-x: auto;
+    font-size: 1.1em;
+    box-shadow: 0 1px 4px rgba(21,101,192,0.07);
+}
+code { color: #1565c0; font-family: 'Fira Mono', 'Consolas', monospace; }
+ul, p { font-size: 1.1em; }
+strong { color: #1565c0; }
